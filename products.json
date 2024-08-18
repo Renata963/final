@@ -3,7 +3,7 @@
     "id": "1",
     "name": "Smartphone Samsung Galaxy S21",
     "price": 3200,
-    "imageUrl": "galaxy21.png",
+    "imageUrl": "",
     "category": "phone",
     "details": "Smartphone Samsung Galaxy S21 cu ecran de 6.2 inch, 128GB memorie internă și cameră triplă.",
     "stockQuantity": 25
@@ -12,7 +12,7 @@
     "id": "2",
     "name": "Smartphone iPhone 13",
     "price": 4500,
-    "imageUrl": "images/iphone_13.png",
+    "imageUrl": "https://w7.pngwing.com/pngs/486/588/png-transparent-iphone-13-pro-back.png",
     "category": "phone",
     "details": "iPhone 13 cu ecran Super Retina XDR de 6.1 inch și procesor A15 Bionic.",
     "stockQuantity": 15
@@ -21,14 +21,14 @@
     "id": "3",
     "name": "Laptop Dell XPS 13",
     "price": 6800,
-    "imageUrl": "images/dell_xps_13.png",
+    "imageUrl": "https://e7.pngegg.com/pngimages/465/338/png-clipart-laptop-dell-xps-13-9360-intel-core-i7-laptop-electronics-netbook.png",
     "category": "phone",
     "details": "Laptop Dell XPS 13 cu procesor Intel i7, 16GB RAM și SSD de 512GB.",
     "stockQuantity": 10
   },
   {
     "id": "4",
-    "name": "Laptop MacBook Air M1",
+    "name": "https://w7.pngwing.com/pngs/551/716/png-transparent-apple-macbook-pro-13-2017-two-thunderbolt-3-ports-laptop-macbook-air-macbook-television-electronics-display-advertising-thumbnail.png",
     "price": 7200,
     "imageUrl": "images/macbook_air_m1.png",
     "category": "phone",
@@ -39,7 +39,7 @@
     "id": "5",
     "name": "Televizor Samsung 55Q80A",
     "price": 5000,
-    "imageUrl": "images/samsung_55q80a.png",
+    "imageUrl": "https://w7.pngwing.com/pngs/870/575/png-transparent-samsung-ku6000-led-backlit-lcd-ultra-high-definition-television-4k-resolution-smart-tv-samsung-television-media-led-thumbnail.png",
     "category": "phone",
     "details": "Televizor Samsung QLED 4K de 55 inch, compatibil HDR10+ și sistem de sunet Dolby Atmos.",
     "stockQuantity": 20
@@ -48,7 +48,7 @@
     "id": "6",
     "name": "Televizor LG OLED55CX3",
     "price": 6500,
-    "imageUrl": "images/lg_oled55cx3.png",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhhUw22SVW3g_Hf0bYe0mh09JaMJPy0UEHA&s",
     "category": "phone",
     "details": "Televizor LG OLED 4K de 55 inch cu procesor α9 Gen 3 AI și tehnologie Dolby Vision.",
     "stockQuantity": 5
@@ -57,7 +57,7 @@
     "id": "7",
     "name": "Smartphone Google Pixel 6",
     "price": 4000,
-    "imageUrl": "images/google_pixel_6.png",
+    "imageUrl": "https://storage.googleapis.com/alpine-inkwell-325917.appspot.com/devices/pixel-6-header.png",
     "category": "phone",
     "details": "Google Pixel 6 cu ecran AMOLED de 6.4 inch, 128GB memorie internă și cameră duală.",
     "stockQuantity": 12
@@ -66,7 +66,7 @@
     "id": "8",
     "name": "Laptop Lenovo ThinkPad X1 Carbon",
     "price": 7800,
-    "imageUrl": "images/thinkpad_x1_carbon.png",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbrtkGGtjDrMc6FMvh0ax3Cpqwp5FwBG9rUQ&s",
     "category": "phone",
     "details": "Laptop Lenovo ThinkPad X1 Carbon cu procesor Intel i7, 16GB RAM și SSD de 1TB.",
     "stockQuantity": 7
