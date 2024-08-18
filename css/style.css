@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #f1e5d1;
+  --dark-color: black;
+  --secondary-color: #987070;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.bg-dark {
+  background-color: var(--secondary-color);
+}
+
+.gap-50 {
+  gap: 50px;
+}
+
+.p-50 {
+  padding: 50px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.navbar a,
+.navbar h3 {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.navbar h3 i {
+  font-size: 28px;
+  padding-top: 10px;
+}
+
+.logo {
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.product-card {
+  background-color: var(--primary-color);
+  width: 200px;
+  text-align: center;
+  padding: 15px 5px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+}
+
+.w-150 {
+  width: 150px;
+}
+
+.w-300 {
+  width: 300px;
+}
+
+.h-40 {
+  height: 40px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid gray;
+}
+
+.filters {
+  padding-top: 50px;
+}
+
+.colors {
+  padding-left: 10px;
+}
+
+.badge {
+  border-radius: 10px;
+  width: 60px;
+  background-color: #f1e5d1;
+  padding: 10px 5px;
+}
+
+.w-100 {
+  width: 100px;
+}

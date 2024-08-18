@@ -1,0 +1,110 @@
+[
+  {
+    "id": "1",
+    "name": "Smartphone Samsung Galaxy S21",
+    "price": 3200,
+    "imageUrl": "galaxy21.png",
+    "category": "phone",
+    "details": "Smartphone Samsung Galaxy S21 cu ecran de 6.2 inch, 128GB memorie internă și cameră triplă.",
+    "stockQuantity": 25
+  },
+  {
+    "id": "2",
+    "name": "Smartphone iPhone 13",
+    "price": 4500,
+    "imageUrl": "images/iphone_13.png",
+    "category": "phone",
+    "details": "iPhone 13 cu ecran Super Retina XDR de 6.1 inch și procesor A15 Bionic.",
+    "stockQuantity": 15
+  },
+  {
+    "id": "3",
+    "name": "Laptop Dell XPS 13",
+    "price": 6800,
+    "imageUrl": "images/dell_xps_13.png",
+    "category": "phone",
+    "details": "Laptop Dell XPS 13 cu procesor Intel i7, 16GB RAM și SSD de 512GB.",
+    "stockQuantity": 10
+  },
+  {
+    "id": "4",
+    "name": "Laptop MacBook Air M1",
+    "price": 7200,
+    "imageUrl": "images/macbook_air_m1.png",
+    "category": "phone",
+    "details": "MacBook Air cu procesor M1, 8GB RAM și SSD de 256GB, ecran de 13.3 inch Retina.",
+    "stockQuantity": 8
+  },
+  {
+    "id": "5",
+    "name": "Televizor Samsung 55Q80A",
+    "price": 5000,
+    "imageUrl": "images/samsung_55q80a.png",
+    "category": "phone",
+    "details": "Televizor Samsung QLED 4K de 55 inch, compatibil HDR10+ și sistem de sunet Dolby Atmos.",
+    "stockQuantity": 20
+  },
+  {
+    "id": "6",
+    "name": "Televizor LG OLED55CX3",
+    "price": 6500,
+    "imageUrl": "images/lg_oled55cx3.png",
+    "category": "phone",
+    "details": "Televizor LG OLED 4K de 55 inch cu procesor α9 Gen 3 AI și tehnologie Dolby Vision.",
+    "stockQuantity": 5
+  },
+  {
+    "id": "7",
+    "name": "Smartphone Google Pixel 6",
+    "price": 4000,
+    "imageUrl": "images/google_pixel_6.png",
+    "category": "phone",
+    "details": "Google Pixel 6 cu ecran AMOLED de 6.4 inch, 128GB memorie internă și cameră duală.",
+    "stockQuantity": 12
+  },
+  {
+    "id": "8",
+    "name": "Laptop Lenovo ThinkPad X1 Carbon",
+    "price": 7800,
+    "imageUrl": "images/thinkpad_x1_carbon.png",
+    "category": "phone",
+    "details": "Laptop Lenovo ThinkPad X1 Carbon cu procesor Intel i7, 16GB RAM și SSD de 1TB.",
+    "stockQuantity": 7
+  },
+  {
+    "id": "9",
+    "name": "Televizor Sony Bravia 65X90J",
+    "price": 7200,
+    "imageUrl": "images/sony_bravia_65x90j.png",
+    "category": "phone",
+    "details": "Televizor Sony Bravia 4K de 65 inch cu procesor X1 Ultimate și tehnologie Dolby Vision.",
+    "stockQuantity": 18
+  },
+  {
+    "id": "10",
+    "name": "Smartphone OnePlus 9",
+    "price": 3300,
+    "imageUrl": "images/oneplus_9.png",
+    "category": "phone",
+    "details": "OnePlus 9 cu ecran Fluid AMOLED de 6.55 inch și procesor Snapdragon 888.",
+    "stockQuantity": 22
+  },
+  {
+    "id": "11",
+    "name": "Laptop HP Spectre x360",
+    "price": 8200,
+    "imageUrl": "images/hp_spectre_x360.png",
+    "category": "phone",
+    "details": "Laptop HP Spectre x360 cu procesor Intel i7, 16GB RAM, SSD de 512GB și ecran tactil de 13.3 inch.",
+    "stockQuantity": 9
+  },
+  {
+    "id": "12",
+    "name": "Televizor Philips 70PUS8535",
+    "price": 5800,
+    "imageUrl": "images/philips_70pus8535.png",
+    "category": "phone",
+    "details": "Televizor Philips 4K de 70 inch cu Ambilight și tehnologie HDR10+.",
+    "stockQuantity": 14
+  }
+]
