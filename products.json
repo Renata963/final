@@ -3,7 +3,7 @@
     "id": "1",
     "name": "Smartphone Samsung Galaxy S21",
     "price": 3200,
-    "imageUrl": "",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ6KDA6L1qvw0GUCagkMoEXl6v4WJNiAU9kg&s",
     "category": "phone",
     "details": "Smartphone Samsung Galaxy S21 cu ecran de 6.2 inch, 128GB memorie internă și cameră triplă.",
     "stockQuantity": 25
@@ -28,9 +28,9 @@
   },
   {
     "id": "4",
-    "name": "https://w7.pngwing.com/pngs/551/716/png-transparent-apple-macbook-pro-13-2017-two-thunderbolt-3-ports-laptop-macbook-air-macbook-television-electronics-display-advertising-thumbnail.png",
+    "name": "Televizor Samsung 55Q80AG",
     "price": 7200,
-    "imageUrl": "images/macbook_air_m1.png",
+    "imageUrl": "https://w7.pngwing.com/pngs/551/716/png-transparent-apple-macbook-pro-13-2017-two-thunderbolt-3-ports-laptop-macbook-air-macbook-television-electronics-display-advertising-thumbnail.png",
     "category": "phone",
     "details": "MacBook Air cu procesor M1, 8GB RAM și SSD de 256GB, ecran de 13.3 inch Retina.",
     "stockQuantity": 8
@@ -75,7 +75,7 @@
     "id": "9",
     "name": "Televizor Sony Bravia 65X90J",
     "price": 7200,
-    "imageUrl": "images/sony_bravia_65x90j.png",
+    "imageUrl": "https://e7.pngegg.com/pngimages/261/986/png-clipart-bravia-led-backlit-lcd-high-definition-television-smart-tv-1080p-sony-television-landscape.png",
     "category": "phone",
     "details": "Televizor Sony Bravia 4K de 65 inch cu procesor X1 Ultimate și tehnologie Dolby Vision.",
     "stockQuantity": 18
@@ -84,7 +84,7 @@
     "id": "10",
     "name": "Smartphone OnePlus 9",
     "price": 3300,
-    "imageUrl": "images/oneplus_9.png",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCoqgYSugj9krTRJWHkP047lWVD5ZnQbWww&s",
     "category": "phone",
     "details": "OnePlus 9 cu ecran Fluid AMOLED de 6.55 inch și procesor Snapdragon 888.",
     "stockQuantity": 22
@@ -93,7 +93,7 @@
     "id": "11",
     "name": "Laptop HP Spectre x360",
     "price": 8200,
-    "imageUrl": "images/hp_spectre_x360.png",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBo72Sck7Uh5g-c5XKIwhuqUq8LYbiMKwjaw&s",
     "category": "phone",
     "details": "Laptop HP Spectre x360 cu procesor Intel i7, 16GB RAM, SSD de 512GB și ecran tactil de 13.3 inch.",
     "stockQuantity": 9
@@ -102,7 +102,7 @@
     "id": "12",
     "name": "Televizor Philips 70PUS8535",
     "price": 5800,
-    "imageUrl": "images/philips_70pus8535.png",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXfwrOVmXUBpGNtdyT6uLsTqeBVUs9qYwSag&s",
     "category": "phone",
     "details": "Televizor Philips 4K de 70 inch cu Ambilight și tehnologie HDR10+.",
     "stockQuantity": 14
