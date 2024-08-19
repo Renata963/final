@@ -12,26 +12,93 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Zambet de copil</title>
+    <title>TechShop</title>
   </head>
   <body>
     <div class="container">
+      
+             <a href="pages/account.html" class="icon-link">
+            
       <div class="navbar flex justify-around items-center bg-dark p-5">
+        <i class="fa-regular fa-id-card"></i>Account</a>
         <div class="logo">
           <h3>
-            <i class="fa-solid fa-child fa-bounce"></i>
-            <a href="index.html">Zâmbet de copil</a>
+         
+         
+            <a href="index.html">TechShop</a>
           </h3>
         </div>
         <div class="nav-links flex gap-10">
           <a href="pages/admin.html">Admin</a>
           <a href="pages/cart.html">Cart</a>
+            
+          <div class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count">0</span>
         </div>
       </div>
-      <div class="flex">
-        <div class="filters">
+    </div>
+    <div class="flex">
+      <div class="filters">
         <div class="main flex wrap gap-50 p-50 justify-between"></div>
       </div>
+      <div id="search">
+	      <svg viewBox="0 0 420 60" xmlns="http://www.w3.org/2000/svg">
+		    <rect class="bar"/>
+		
+		<g class="magnifier">
+			<circle class="glass"/>
+			<line class="handle" x1="32" y1="32" x2="44" y2="44"></line>
+		</g>
+
+		<g class="sparks">
+			<circle class="spark"/>
+			<circle class="spark"/>
+			<circle class="spark"/>
+		</g>
+
+		<g class="burst pattern-one">
+			<circle class="particle circle"/>
+			<path class="particle triangle"/>
+			<circle class="particle circle"/>
+			<path class="particle plus"/>
+			<rect class="particle rect"/>
+			<path class="particle triangle"/>
+		</g>
+		<g class="burst pattern-two">
+			<path class="particle plus"/>
+			<circle class="particle circle"/>
+			<path class="particle triangle"/>
+			<rect class="particle rect"/>
+			<circle class="particle circle"/>
+			<path class="particle plus"/>
+		</g>
+		<g class="burst pattern-three">
+			<circle class="particle circle"/>
+			<rect class="particle rect"/>
+			<path class="particle plus"/>
+			<path class="particle triangle"/>
+			<rect class="particle rect"/>
+			<path class="particle plus"/>
+		</g>
+	</svg>
+	<input type=search name=q aria-label="Search for inspiration"/>
+  <div class ="produse">
+  <form>
+            <h1>Category</h1>
+            <label for="category">Choose a category:</label>
+           <select id="category">
+            <option value="all">ALL</option>
+            <option value="laptop">LAPTOP</option>
+            <option value="smartphone" selected>SMARTPHONE</option>
+            <option value="televizor">TV</option>
+            </select>
+            <div id="product-list">
+        <!-- Products will be displayed here -->
+            </div>
+        </form>
+        </div>
+
       <div class="footer"></div>
     </div>
     <script type="module" src="index.js"></script>
