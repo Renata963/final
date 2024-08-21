@@ -16,7 +16,11 @@ export function mapProductToAdminTableRow(product) {
             <tr>
                <td>${product.name}</td>
                <td>${product.price}</td>
-              
+               <td>
+                  <a href="details.html?id=${product.id}">
+                     <img src="../${product.imageUrl}" width="50px" />
+                  </a>
+               </td>
                <td>
                   <button class="edit-${product.id}">
                      <i class="fa-solid fa-pen-to-square">

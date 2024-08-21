@@ -26,7 +26,7 @@ async function displayAllProducts() {
 const form = document.getElementById("product-form");
 const nameInput = document.getElementById("name");
 const priceInput = document.getElementById("price");
-
+const imageUrlInput = document.getElementById("image-url");
 const detailsInput = document.getElementById("details");
 const saveProductButton = document.getElementById("save-btn");
 let editMode = false;
@@ -40,7 +40,7 @@ async function saveProduct(event) {
   const product = {
     name: nameInput.value,
     price: Number(priceInput.value),
-
+    imageUrl: imageUrlInput.value,
     details: detailsInput.value,
   };
 
@@ -82,7 +82,7 @@ function editProduct(id) {
     editMode = true;
     nameInput.value = product.name;
     priceInput.value = product.price;
-
+    imageUrlInput.value = product.imageUrl;
     detailsInput.value = product.details;
 
     currentEditableProductId = product.id;
