@@ -1,63 +1,114 @@
 :root {
-	--primary-color: #f1e5d1;
-	--dark-color: black;
-	--secondary-color: #987070;
+  --primary-color: #f1e5d1;
+  --dark-color: black;
+  --secondary-color: #987070;
 }
 
 .main {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 form {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
 }
 
 form > div {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 form > div > input {
-	padding: 5px;
-	font-size: 18px;
-	border-radius: 10px;
-	border: 1px solid gray;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid gray;
 }
 
 form > div > label {
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 form > button {
-	padding: 10px;
-	font-size: 18px;
-	background-color: var(--secondary-color);
-	border: none;
-	border-radius: 10px;
-	color: white;
+  padding: 10px;
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 10px;
+  color: white;
 }
 
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 table {
-	width: 100%;
-	border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 table,
 th,
 td {
-	border: 1px solid gray;
+  border: 1px solid gray;
 }
 
 th,
 td {
-	padding: 10px;
+  padding: 10px;
+}
+.fa-solid {
+  font-size: 50px;
+}
+.fa-regular {
+  font-size: 35px;
+}
+.bg-dark {
+  background-color: #c5dddd;
+}
+form > button {
+  background-color: #007bff;
+}
+td,
+label,
+th {
+  font-size: 20px;
+  font-weight: 500;
+}
+.table-container {
+  display: flex;
+  justify-content: center;
+  /* Optional: Add padding or margin if needed */
+}
+
+table {
+  width: 800px; /* Lățimea tabelului */
+  border-collapse: collapse; /* Îmbină bordurile celulelor */
+  margin: auto; /* Centrează tabelul pe pagină */
+}
+
+th,
+td {
+  width: 150px; /* Lățimea fiecărei celule */
+  height: 100px; /* Înălțimea fiecărei celule */
+  border: 1px solid black; /* Bordura celulelor */
+  text-align: center; /* Alinierea textului pe orizontală */
+  vertical-align: middle; /* Alinierea textului pe verticală */
+  padding: 8px; /* Spațiu interior pentru celule */
+}
+h1 {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: lighter;
+}
+.admin h3 a:first-of-type {
+  position: absolute;
+  top: 5px;
+  right: 650px;
+  font-size: 37px;
 }

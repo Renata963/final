@@ -18,14 +18,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const descreaseDisabled = product.quantity === 1 ? "disabled" : "";
       productCard.innerHTML = `
-			<img width="100px" src=../${product.imageUrl} />
+			 
+    <img width="100px" src="/path/to/images/${product.imageUrl}" />
+
+
 				<div class=" w-100 h-100 flex gap-50  justify-between items-center">
             	<span style ="font-size: 20px; font-style:italic;">${
                 product.name
               }</span>
 			
 				
-            	<div style="color:red;">
+            	<div>
 						<button data-id=${id} ${descreaseDisabled} class="decrease">-</button>
 						<span>${product.quantity}</span>
 						<button data-id=${id} class="increase">+</button>
@@ -60,3 +63,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateCart();
 });
+console.log(cart);

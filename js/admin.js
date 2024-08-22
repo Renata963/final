@@ -29,6 +29,7 @@ const priceInput = document.getElementById("price");
 const imageUrlInput = document.getElementById("image-url");
 const detailsInput = document.getElementById("details");
 const saveProductButton = document.getElementById("save-btn");
+
 let editMode = false;
 let currentEditableProductId;
 
@@ -87,4 +88,35 @@ function editProduct(id) {
 
     currentEditableProductId = product.id;
   });
+}
+function updateCartCount() {
+  // Obține numărul de produse din localStorage (sau dintr-o altă sursă)
+  const cart = JSON.parse(localStorage.getItem("cart")) || {};
+  const cartCount = Object.values(cart).reduce(
+    (total, product) => total + product.quantity,
+    0
+  );
+
+  // Găsește elementul cu numărul de produse
+  const cartCountElement = document.querySelector(".cart-count");
+  if (cartCountElement) {
+    cartCountElement.textContent = cartCount;
+  }
+}
+
+// Apelează funcția pentru a actualiza numărul de produse la încărcarea paginii
+window.addEventListener("DOMContentLoaded", updateCartCount);
+
+// Exemplu de actualizare a numărului de produse când se adaugă un produs în coș
+function addToCart(productId, quantity) {
+  const cart = JSON.parse(localStorage.getItem("cart")) || {};
+  if (cart[productId]) {
+    cart[productId].quantity += quantity;
+  } else {
+    cart[productId] = { quantity };
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  // Actualizează numărul de produse
+  updateCartCount();
 }

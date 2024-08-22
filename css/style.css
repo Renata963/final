@@ -475,10 +475,10 @@ body {
   grid-area: results;
   background: hsl(0, 0%, 95%);
 }
-h3 a:first-of-type {
+.index-page h3 a:first-of-type {
   font-weight: bold;
   position: absolute;
-  left: 650px;
+  left: 510px;
   font-size: 35px;
   top: 0px;
 }
@@ -494,4 +494,13 @@ h3 a:first-of-type {
   border-radius: 5px;
   cursor: pointer;
   font-size: 15px;
+}
+img {
+  width: 90px; /* Set to your desired width */
+  height: 90px; /* Set to your desired height */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+}
+.index-page .icon-link {
+  position: absolute;
+  left: 40px;
 }
