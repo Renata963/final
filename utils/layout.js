@@ -7,7 +7,7 @@ export function mapProductToCard(product) {
                </a>
 					<p class="card-price">${product.price} lei</p>
                
-               (button details<p class="card-stocQuantity">${product.stockQuantity}</p>))))
+               <p class="card-stocQuantity">${product.stockQuantity}</p>
                
                <button class="add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.imageUrl}" data-stockQuantity="${product.stockQuantity}">Adauga in cos</button>
 				</div>

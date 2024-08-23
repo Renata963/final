@@ -12,17 +12,17 @@ async function showProductDetails() {
   document.querySelector(".main").innerHTML = `
     <table border="1" style="border-collapse: collapse; width: 100%; text-align: left;">
         <tr>
-            <th>Nume Produs</th>
-            <th>Detalii</th>
-            <th>Pret</th>
+            <th>Name</th>
+            <th>Details</th>
+            <th>Price</th>
             <th>Stoc</th>
-            <th>Imagine</th>
+            <th>Image</th>
         </tr>
         <tr>
             <td>${product.name}</td>
             <td>${product.details}</td>
             <td>${product.price}</td>
-            <td>${product.stockQuantity}</td>
+            <td>${product.stockQuantity}
             
             <td><img src="../${product.imageUrl}" width="50px" /></td>
         </tr>

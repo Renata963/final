@@ -16,7 +16,6 @@ async function displayAllProducts() {
       const price = button.getAttribute("data-price");
       const name = button.getAttribute("data-name");
       const imageUrl = button.getAttribute("data-image");
-      const stockQuantity = button.getAttribute("data-stockQuantity");
 
       let cart = JSON.parse(localStorage.getItem("cart")) || {};
       if (cart[productId]) {
@@ -27,15 +26,15 @@ async function displayAllProducts() {
           price: price,
           name: name,
           imageUrl: imageUrl,
-          stocQuantity: stocQuantity,
         };
       }
 
       localStorage.setItem("cart", JSON.stringify(cart));
+
+      updateCartCount();
     });
   });
 }
-// Functie pentru a actualiza numarul de produse din cos
 function updateCartCount() {
   // Obține numărul de produse din localStorage (sau dintr-o altă sursă)
   const cart = JSON.parse(localStorage.getItem("cart")) || {};
