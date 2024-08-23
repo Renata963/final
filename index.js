@@ -113,30 +113,46 @@ const products = [
 ];
 
 // Function to display products
+// Function to display products
 function displayProducts(category) {
   const productList = document.getElementById("product-list");
   productList.innerHTML = ""; // Clear previous products
 
-  const filteredProducts =
-    category === "all"
-      ? products
-      : products.filter((product) => product.category === category);
-
-  filteredProducts.forEach((product) => {
+  products.forEach((product) => {
     const productDiv = document.createElement("div");
-    productDiv.className = "product";
+    productDiv.className = `product ${product.category}`; // Add category as class
     productDiv.innerHTML = `
-            <h2>${product.name}</h2>
-            <p>Price: ${product.price}    lei</p>
-        `;
+        <h2>
+            <a href="details.html?name=${encodeURIComponent(
+              product.name
+            )}" style="text-decoration: none; color: inherit;">
+                ${product.name}
+            </a>
+        </h2>
+        <p>Price: ${product.price} lei</p>
+    `;
     productList.appendChild(productDiv);
+  });
+
+  filterProductsByCategory(category);
+}
+
+// Function to filter products based on the selected category
+function filterProductsByCategory(category) {
+  const allProducts = document.querySelectorAll(".product");
+  allProducts.forEach((product) => {
+    if (category === "all" || product.classList.contains(category)) {
+      product.style.display = "block";
+    } else {
+      product.style.display = "none";
+    }
   });
 }
 
 // Event listener for category change
 document.getElementById("category").addEventListener("change", (e) => {
-  displayProducts(e.target.value);
+  filterProductsByCategory(e.target.value);
 });
 
-// Display products on page load
+// Display all products on page load
 displayProducts(document.getElementById("category").value);

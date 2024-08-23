@@ -1,5 +1,4 @@
 import { getProductById } from "../api/products.js";
-import { mapProductToCard } from "../utils/layout.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const cart = JSON.parse(localStorage.getItem("cart")) || {};
@@ -102,7 +101,7 @@ function updateCart() {
 
   for (let id in cart) {
     const product = cart[id];
-    const stocQuantity = product.stocQuantity;
+    const stocQuantity = cart.stocQuantity;
 
     const productCard = document.createElement("div");
     productCard.className =
@@ -116,7 +115,7 @@ function updateCart() {
       <div class="w-100 h-100 flex gap-50 justify-between items-center">
         <span style="font-size: 20px; font-style:italic;">
 		<a href="details.html?id=${id}" style="text-decoration: none; color: inherit;">
-            ${product.name}
+            ${product.name}</a>
         <div>
           <button data-id="${id}" ${decreaseDisabled} class="decrease">-</button>
           <span>${product.quantity}</span>
@@ -130,7 +129,7 @@ function updateCart() {
                
       <button data-id="${id}" class="delete" style="font-size: 20px; margin:20px;">Delete</button>
     `;
-    total += product.price * product.quantity;
+    total = total + product.price * product.quantity;
     cartItemsContainer.appendChild(productCard);
   }
 
@@ -143,15 +142,7 @@ function updateCart() {
     if (e.target.classList.contains("increase")) {
       if (cart[id].quantity < cart[id].stocQuantity) {
         cart[id].quantity += 1;
-      } else {
-        alert("Not enough stock available!");
       }
-    } else if (e.target.classList.contains("decrease")) {
-      if (cart[id].quantity > 1) {
-        cart[id].quantity -= 1;
-      }
-    } else if (e.target.classList.contains("delete")) {
-      delete cart[id];
     }
 
     localStorage.setItem("cart", JSON.stringify(cart));
