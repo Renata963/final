@@ -12,7 +12,10 @@ const productsTableBody = document
   .getElementById("products-table")
   .querySelector("tbody");
 
-document.addEventListener("DOMContentLoaded", displayAllProducts);
+document.addEventListener("DOMContentLoaded", () => {
+  displayAllProducts();
+  updateCartCount();
+});
 
 async function displayAllProducts() {
   const products = await getAllProducts();
@@ -28,6 +31,7 @@ const nameInput = document.getElementById("name");
 const priceInput = document.getElementById("price");
 const imageUrlInput = document.getElementById("image-url");
 const detailsInput = document.getElementById("details");
+const stockQuantityInput = document.getElementById("stockQuantity");
 const saveProductButton = document.getElementById("save-btn");
 
 let editMode = false;
@@ -43,6 +47,7 @@ async function saveProduct(event) {
     price: Number(priceInput.value),
     imageUrl: imageUrlInput.value,
     details: detailsInput.value,
+    stockQuantity: Number(stockQuantityInput.value),
   };
 
   if (editMode) {
@@ -85,6 +90,7 @@ function editProduct(id) {
     priceInput.value = product.price;
     imageUrlInput.value = product.imageUrl;
     detailsInput.value = product.details;
+    stockQuantityInput.value = product.stockQuantity;
 
     currentEditableProductId = product.id;
   });
