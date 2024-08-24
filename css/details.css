@@ -1,14 +1,30 @@
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+.th {
+  background-color: #f2f2f2;
 }
+table {
+  border-collapse: collapse;
+
+  width: 80%; /* Set width to 80% of the container, adjust as needed */
+  margin: auto; /* Center the table on the page */
+}
+
 th,
 td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+  border: 1px solid black; /* Add border for table cells */
+  padding: 10px; /* Padding inside cells */
+  text-align: center; /* Center-align content horizontally */
+  vertical-align: center; /* Center-align content vertically */
 }
-th {
-  background-color: #f2f2f2;
+
+td img {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 50px;
+  max-height: 50px;
+}
+
+button.add-to-cart {
+  width: 100%; /* Make the button take full width of the cell */
+  padding: 5px;
+  box-sizing: border-box; /* Include padding in the button's width */
 }

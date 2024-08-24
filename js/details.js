@@ -11,12 +11,21 @@ async function showProductDetails() {
 
   document.querySelector(".main").innerHTML = `
     <table border="1" style="border-collapse: collapse; width: 100%; text-align: left;">
+     <colgroup>
+        <col style="width: 20%;">
+        <col style="width: 30%;">
+        <col style="width: 15%;">
+        <col style="width: 10%;">
+        <col style="width: 15%;">
+        <col style="width: 10%;">
+    </colgroup>
         <tr>
             <th>Name</th>
             <th>Details</th>
             <th>Price</th>
             <th>Stoc</th>
             <th>Image</th>
+            <th><i class="fa-solid fa-check"></i></th>
             
         </tr>
         <tr>
@@ -27,7 +36,7 @@ async function showProductDetails() {
             
             <td><img src="../${product.imageUrl}" width="50px" /></td>
       
-            <td><button class="add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.imageUrl}" data-stockQuantity="${product.stockQuantity}">Adauga in cos</button>
+            <td><button class="add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.imageUrl}" data-stockQuantity="${product.stockQuantity}">Add to cart</button>
         </tr>
     </table>`;
 }

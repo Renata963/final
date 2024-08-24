@@ -10,7 +10,7 @@ export function mapProductToCard(product) {
                <a href="../pages/details.html?id=${product.id}">
                 <button class="details">Details</button></a>
                  
-               <button class="add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.imageUrl}" data-stockQuantity="${product.stockQuantity}">Adauga in cos</button>
+               <button class="add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.imageUrl}" data-stockQuantity="${product.stockQuantity}">Add to cart</button>
 				</div>
       		`;
 }

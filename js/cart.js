@@ -111,12 +111,15 @@ function updateCart() {
     const increaseDisabled = product.quantity >= stocQuantity ? "disabled" : "";
 
     productCard.innerHTML = `
+	
+	
+      
       <img width="100px" src="../${product.imageUrl}" />
       <div class="w-100 h-100 flex gap-50 justify-between items-center">
         <span style="font-size: 20px; font-style:italic;">
-		<a href="details.html?id=${id}" style="text-decoration: none; color: inherit;">
+		<a href="details.html?id=${id}" style="text-decoration:undeerline;">
             ${product.name}</a>
-        <div>
+        <div class="stilizare">
           <button data-id="${id}" ${decreaseDisabled} class="decrease">-</button>
           <span>${product.quantity}</span>
           <button data-id="${id}" ${increaseDisabled} class="increase">+</button>

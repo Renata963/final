@@ -5,3 +5,34 @@ img {
   object-fit: cover; /* Ensures images cover the area without distortion */
   background-color: white;
 }
+
+.cart-total {
+  font-size: 15px;
+  padding: 5px;
+}
+.w-100 {
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+
+  margin-bottom: 130px; /* Adds space below the link */
+}
+
+.stilizare {
+  display: flex;
+  padding: 10px;
+
+  border: 1px solid #ccc;
+  gap: 10px;
+}
+.decrease,
+.increase {
+  width: 20px;
+}
+.delete {
+  width: 100px;
+  height: 35px;
+  border-radius: 80px;
+}

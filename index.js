@@ -113,7 +113,6 @@ const products = [
 ];
 
 // Function to display products
-// Function to display products
 function displayProducts(category) {
   const productList = document.getElementById("product-list");
   productList.innerHTML = ""; // Clear previous products
